@@ -49,7 +49,7 @@ echo.
 echo Retrieving Steam installation path...
 for /f "tokens=3*" %%a in ('reg query "%regKey%" /v InstallPath 2^>nul') do (
     set "steamPath=%%a %%b"
-    set "steamPath=!steamPath: =!"
+    set "steamPath=C:\Program Files (x86)\Steam"
 )
 
 :: Check if steamPath was retrieved successfully
